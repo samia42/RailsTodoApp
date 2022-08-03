@@ -1,0 +1,2 @@
+class Anothertodo < ApplicationRecord
+end
