@@ -15,6 +15,8 @@
         <th> <%= todo.description %></th>
         <th> <%= link_to "edit", edit_todo_path(todo) %> </th>
         <th> <%= link_to "show", todo_path(todo) %></th>
+        <th><%= link_to 'Delete', todo_path(todo) ,data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+        </th>
         
     </tr>
     <%end%>
