@@ -1,3 +1,5 @@
 <h1>Showing a todo</h1>
 <p> name: <%= @todo.name%> </p>
 <p> description: <%= @todo.description%> </p>
+<%= link_to "edit", edit_todo_path(@todo) %> 
+<%= link_to "All todos", todos_path%> 
